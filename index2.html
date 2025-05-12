@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vibe Engine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a, #9333ea);
+      background-size: 600% 600%;
+      animation: gradientAnimation 20s ease infinite;
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+    <h1 class="text-3xl font-bold tracking-wide">Vibe Engine</h1>
+    <a href="#subscribe" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg transition">Subscribe</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6">
+    <h2 class="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">Fuel Your Mind</h2>
+    <p class="text-xl md:text-2xl text-white/80 mb-8">Curated soundscapes for deep work, creativity, and flow.</p>
+    <a href="#guides" class="bg-pink-400 hover:bg-pink-500 text-white py-3 px-6 rounded-full text-lg transition">Explore Guides</a>
+  </section>
+
+  <!-- Featured Guides -->
+  <section id="guides" class="py-16 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-10 text-center">Featured Experiences</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white/10 p-6 rounded-2xl hover:scale-105 transition transform shadow-lg">
+        <h4 class="text-2xl font-bold mb-4">Focus Reactor</h4>
+        <p class="text-white/80 mb-6">Ambient layers crafted for deep, distraction-free work sessions.</p>
+        <a href="#subscribe" class="text-pink-300 hover:underline">Get This Guide →</a>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl hover:scale-105 transition transform shadow-lg">
+        <h4 class="text-2xl font-bold mb-4">Dreamscape</h4>
+        <p class="text-white/80 mb-6">Surreal sound worlds to spark inspiration and imaginative thought.</p>
+        <a href="#subscribe" class="text-pink-300 hover:underline">Get This Guide →</a>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl hover:scale-105 transition transform shadow-lg">
+        <h4 class="text-2xl font-bold mb-4">Liminal Sleep</h4>
+        <p class="text-white/80 mb-6">Gentle sound textures guiding you to rest and lucid dreams.</p>
+        <a href="#subscribe" class="text-pink-300 hover:underline">Get This Guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section id="subscribe" class="py-20 px-6 bg-white/10 rounded-t-3xl text-center mt-20 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6">Join the Movement</h3>
+    <p class="text-white/70 mb-8">Subscribe to unlock your first free soundscape guide and updates from Vibe Engine.</p>
+    <form class="flex flex-col md:flex-row justify-center items-center gap-4 max-w-xl mx-auto">
+      <input type="email" placeholder="Your Email" class="p-3 rounded-lg w-full md:w-auto text-black" required>
+      <button type="submit" class="bg-pink-500 hover:bg-pink-600 py-3 px-6 rounded-lg transition">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white/60 py-10 text-sm">
+    © 2025 Vibe Engine. All rights reserved.
+  </footer>
+
+</body>
+</html>
